@@ -15,3 +15,6 @@ http://alexa.design/cli-task-five // https://github.com/alexa/alexa-cookbook/blo
 
 #### Task 6: Monetize Your Skill
 http://alexa.design/cli-task-six // https://github.com/alexa/alexa-cookbook/blob/master/labs/CLI/cli-task-6.md
+
+#### Task 7: Customer Purchase Path
+http://alexa.design/cli-task-seven // https://github.com/alexa/alexa-cookbook/blob/master/labs/CLI/cli-task-7.md

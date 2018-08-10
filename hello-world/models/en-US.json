@@ -36,6 +36,18 @@
           ]
         },
         {
+          "name": "BuyIntent",
+          "slots": [
+
+          ],
+          "samples": [
+            "buy now",
+            "buy it now",
+            "I want to buy",
+            "let's buy"
+          ]
+        },
+        {
           "name": "HelloWorldIntent",
           "slots": [
 
