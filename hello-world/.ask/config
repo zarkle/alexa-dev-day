@@ -31,10 +31,18 @@
             "alexaUsage": [
               "custom/default"
             ],
-            "revisionId": "9f35059b-468a-4dc5-bcb9-acc4707f90cd"
+            "revisionId": "aeb9f887-0fd9-4732-977c-51c411c87675"
           }
         ]
-      }
+      },
+      "in_skill_products": [
+        {
+          "deploy_status": "Update",
+          "filePath": "isps/entitlement/premium-greeting.json",
+          "productId": "amzn1.adg.product.d84c86fc-e2e5-469c-bf80-66971b748115",
+          "eTag": "d4a2a084ecf1c8f5c61a1b014b540a31"
+        }
+      ]
     }
   }
 }

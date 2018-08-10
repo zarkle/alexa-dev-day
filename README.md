@@ -12,3 +12,6 @@ http://alexa.design/cli-task-four // https://github.com/alexa/alexa-cookbook/blo
 
 #### Task 5: Expand Alexa Skill
 http://alexa.design/cli-task-five // https://github.com/alexa/alexa-cookbook/blob/master/labs/CLI/cli-task-5.md
+
+#### Task 6: Monetize Your Skill
+http://alexa.design/cli-task-six // https://github.com/alexa/alexa-cookbook/blob/master/labs/CLI/cli-task-6.md

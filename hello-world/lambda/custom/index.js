@@ -23,11 +23,28 @@ const HelloWorldIntentHandler = {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
       && handlerInput.requestEnvelope.request.intent.name === 'HelloWorldIntent';
   },
-  handle(handlerInput) {
-    const speechText = 'Hello World!';
+  async handle(handlerInput) {
+    let speechText = 'Hello World!';
+    let repromptText = 'Try saying hello. ';
+    const locale = handlerInput.requestEnvelope.request.locale;
+    const monetizationService = await handlerInput.serviceClientFactory.getMonetizationServiceClient();
+  
+    const result = await monetizationService.getInSkillProducts(locale);
+    const product = result.inSkillProducts[0]
+    console.log(product);
+
+    if (product.entitled === 'ENTITLED') {
+      speechText = "Many years of happy days befall thee, my <emphasis level='strong'>gracious</emphasis> sovereign." 
+      		+ "<audio src='https://s3.amazonaws.com/ask-soundlibrary/magic/amzn_sfx_fairy_melodic_chimes_01.mp3'/>";
+    } else {
+      upsell = product.summary + ' Say buy it now to make it happen!';
+      speechText = 'Hello World. ' + upsell;
+      repromptText = repromptText + upsell;
+    }
 
     return handlerInput.responseBuilder
       .speak(speechText)
+      .reprompt(repromptText)
       .withSimpleCard('Hello World', speechText)
       .getResponse();
   },
@@ -119,4 +136,5 @@ exports.handler = skillBuilder
     SessionEndedRequestHandler
   )
   .addErrorHandlers(ErrorHandler)
+  .withApiClient(new Alexa.DefaultApiClient())
   .lambda();
