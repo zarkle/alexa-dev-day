@@ -20,7 +20,7 @@ http://alexa.design/cli-task-six // https://github.com/alexa/alexa-cookbook/blob
 http://alexa.design/cli-task-seven // https://github.com/alexa/alexa-cookbook/blob/master/labs/CLI/cli-task-7.md
 
 ### Companion Course
-http://alexa.design/cdw
+http://alexa.design/cdw // https://s3.amazonaws.com/dex-microsites-beta/guided/conversational-design-workshop.html
 
 ### Misc Stuff
 - alexa.design/profile-api : request permission to access their contact info 
