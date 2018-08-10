@@ -18,3 +18,16 @@ http://alexa.design/cli-task-six // https://github.com/alexa/alexa-cookbook/blob
 
 #### Task 7: Customer Purchase Path
 http://alexa.design/cli-task-seven // https://github.com/alexa/alexa-cookbook/blob/master/labs/CLI/cli-task-7.md
+
+### Companion Course
+http://alexa.design/cdw
+
+### Misc Stuff
+- alexa.design/profile-api : request permission to access their contact info 
+- alexa.design/python-sdk  or https://github.com/alexa-labs/alexa-skills-kit-sdk-for-python
+- ASK toolkit for VS Code:   visual studio code extension, can use command palette to do terminal commands
+- alexa.design/fallback : fallbackintent
+- alexa.design/canfulfill : use your skill without invocation name
+- alexa.design/show-mode : use your Fire tablet as an Alexa (have show mode turned on)
+- https://developer.amazon.com/alexa-skills-kit/alexa-aws-credits
+- Jed's Twitter for feedback: @jedespo 
