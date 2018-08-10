@@ -6,3 +6,6 @@ alexa.design/cli-task-two // https://github.com/alexa/alexa-cookbook/blob/master
 
 #### Task 3: Customize lambda code
 alexa.design/cli-task-three // https://github.com/alexa/alexa-cookbook/blob/master/labs/CLI/cli-task-3.md
+
+#### Task 4: Change Skill interaction model
+alexa.design/cli-task-four // https://github.com/alexa/alexa-cookbook/blob/master/labs/CLI/cli-task-4.md
