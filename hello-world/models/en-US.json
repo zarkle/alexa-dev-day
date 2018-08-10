@@ -25,6 +25,17 @@
           ]
         },
         {
+          "name": "HowAreYouIntent",
+          "slots": [
+  
+          ],
+          "samples": [
+            "how is he doing",
+            "how are you",
+            "howdy do"
+          ]
+        },
+        {
           "name": "HelloWorldIntent",
           "slots": [
 

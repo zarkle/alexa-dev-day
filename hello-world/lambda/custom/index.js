@@ -33,6 +33,23 @@ const HelloWorldIntentHandler = {
   },
 };
 
+const HowAreYouIntentHandler = {
+
+  canHandle(handlerInput) {
+  		return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+    		&& handlerInput.requestEnvelope.request.intent.name === 'HowAreYouIntent';
+  },
+  handle(handlerInput) {
+
+  	const speechText = 'I\'m fabulous!';
+
+  	return handlerInput.responseBuilder
+  		.speak(speechText)
+  		.withSimpleCard('Hello World', speechText)
+  		.getResponse();
+  },
+};
+
 const HelpIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
@@ -96,6 +113,7 @@ exports.handler = skillBuilder
   .addRequestHandlers(
     LaunchRequestHandler,
     HelloWorldIntentHandler,
+    HowAreYouIntentHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler
